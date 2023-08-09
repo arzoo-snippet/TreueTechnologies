@@ -1,0 +1,451 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Brush Script MT';
+    background-size:cover;
+    height: 10vh;
+    background-position: center;
+    backface-visibility: visible;
+    background-repeat:no-repeat;
+    background-image: url('image/OIG.ov1M.jpeg');
+    
+}
+
+
+
+/*header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+}
+    .header .logo {
+        color: var(--main-color);
+        font-size: 2.3rem;
+                    text-decoration:none;
+
+
+    }
+
+        .header .logo i {
+            padding-left: .5rem;
+            text-decoration:none;
+        }
+
+#menu-btn {
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+    .btn:hover {
+        border-radius: var(--border-radius-hover);
+        border: var(--border-hover);
+    }
+.user_icon i {
+    font-size: 16px; /* Adjust this value to change the icon size */
+}
+.search-box {
+    border-radius: 20px; /* Adjust this value to control the roundness of the search box */
+    padding: 10px; /* Add some padding to make the search box look better */
+}
+
+/*anchor navigation*/
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    text-decoration: none;
+    position: relative;
+    transition: box-shadow 0.3s, color 0.3s;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    box-shadow: 0 0 20px #33aaff;
+    color: #33aaff;
+}
+
+    a:hover::before {
+        opacity: 1;
+    }
+
+/*coffe section*/
+
+.home {
+    min-height: 100vh;
+    padding-top: 5px;
+    position:absolute;
+    height:20%;
+    margin:0 0 10px 0;
+    font-size:100px;
+    color:white;
+   
+}
+    .home .row .image {
+        flex: 0 0 0rem;
+        padding-top: 0rem;
+        text-align: center;
+        top:0;
+        bottom:300px;
+    }
+
+.discount{
+    top:40%;
+    position:absolute;
+    font-size:20px;
+    left:20px;
+    transition:0.3s;
+}
+
+.discount label{
+    color:gold;
+    font-size:35px;
+}
+
+.discount p{
+    color:burlywood;
+    font-size:20px;
+}
+
+    .discount:hover {
+        cursor: pointer;
+        font-weight: bold;
+        transform: scale(1.2);
+        transform: translateX(70px);
+    } 
+
+
+
+
+
+/*offer discount Quate*/
+.offer{
+    text-align:center;
+    font-size:45px;
+    position:relative;
+    left:40%;
+    right:0;
+    top:240px;
+    padding:0;
+    margin:0;
+}
+
+
+
+.slider-container {
+    top:130%;
+    max-width: 500px; /* Adjust the container width as needed */
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    left:160px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%; /* Ensure each slide takes the full width */
+    position: relative;
+    backface-visibility:visible;
+}
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 25px;
+}
+
+/*types of coffee*/
+.type {
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    left: 10px;
+    top: 120%;
+    padding: 0;
+    margin: 0;
+    color:black;
+   
+}
+/*description of coffee*/
+
+.description {
+    color: black;
+    position: relative;
+    left: 40%;
+    right: 0;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    top: 350px;
+    transition:0.3s;
+
+}
+
+.lab{
+        color:saddlebrown;
+    }
+.description .hover:hover {
+    color:sandybrown ;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.2);
+    transform: translateX(-70px);
+}
+/*text coffy pastry*/
+
+.type1 {
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    left: 30px;
+    top: 100rem;
+    bottom:auto;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+/*image container 2*/
+
+.container2 {
+    top: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 100px 50px;
+    padding: 100px 50px;
+}
+.container2 .card{
+    position:relative;
+    width:350px;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    background:black;
+    border-radius:20px;
+    box-shadow:0 35px 80px rgba(0,0,0,0.15);
+}
+.container2 .card:hover{
+    height:400px;
+}
+
+.container2 .card .imgBx{
+    position:absolute;
+    width:300px;
+    height:220px;
+    top:20px;
+    background:#333;
+    border-radius:12px;
+    transition:0.5s;
+    overflow:hidden;
+}
+
+.container2 .card:hover .imgBx{
+    top:-100px;
+    scale:0.75;
+    box-shadow:0 15px 45px; rgba(0,0,0,0.2);
+
+}
+.container2 .card .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+    .container2 .card .content2{
+        position:absolute;
+        width:100%;
+        padding:0 30px;
+        text-align:center;
+        height:100px;
+        overflow:hidden;
+        transition:0.5s;
+    }
+    .container2 .card:hover .content2{
+        height:400px;
+        top:150px;
+    }
+    .container2 .card .content2 h2{
+        font-size:50px;
+        font-weight:700;
+        color:white;
+    }
+    .container2 .card .content2 p{
+        font-size:20px;
+        color:white;
+    }
+    .container2 .card .content2 a{
+        font-size:20px;
+        position:relative;
+        top:15px;
+        display:inline-block;
+        padding:12px 25px;
+        background:red;
+        color:white;
+        font-weight:200;
+        text-decoration:none;
+        border-radius:5px;
+    }
+/*text beans and coffeee to go 2*/
+
+.type2 {
+    top: 145rem;
+    position: absolute;
+    text-align: center;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    bottom:0;
+    left:30px;
+    color:black;
+}
+
+/*Images beans and coffeee to go 2*/
+.container3 {
+    top: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 100px 50px;
+}
+
+    .container3 .card2 {
+        position: relative;
+        width: 350px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background:white;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    }
+
+
+        .container3 .card2 .im1 {
+            position: absolute;
+            width: 300px;
+            height: 220px;
+            top: 20px;
+            background: #333;
+        }
+
+        .container3 .card2 .im1 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container3 .card2 .content3 {
+            position: absolute;
+            width: 100%;
+            padding: 0 30px;
+            text-align: center;
+            height: 100px;
+        }
+
+        .container3 .card2 .content3 h2 {
+            font-size: 50px;
+            color: white;
+        }
+
+       
+
+        .container3 .card2 .content3 a {
+            font-size: 20px;
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            background: red;
+            color: white;
+            font-weight: 200;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+.footer{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    top:60rem;
+    color:red;
+    font-size:20px;
+}
+.location_text{
+    font-size:20px;
+}
+.social-icons {
+    top:65rem;
+    position:relative;
+    justify-content:center;
+    display: flex; /* Align icons in a row */
+    gap: 20px; /* Spacing between icons */
+}
+
+    .social-icons a {
+        font-size: 24px; /* Adjust icon size */
+        color: #333; /* Icon color */
+        text-decoration: none; /* Remove underline from links */
+    }
